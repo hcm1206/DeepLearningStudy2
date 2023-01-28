@@ -92,9 +92,11 @@ def preprocess(text):
     # 텍스트 데이터의 ID 배열(corpus), {단어 : ID} 쌍의 딕셔너리(word_to_id), {ID : 단어} 쌍의 딕셔너리(id_to_word) 리턴
     return corpus, word_to_id, id_to_word
 
-
+# 전처리 함수 테스트
 text = 'You say goodbye and I say hello.'
 corpus, word_to_id, id_to_word = preprocess(text)
 print("전처리 함수 corpus :", corpus)
 print("전처리 함수 word_to_od :", word_to_id)
 print("전처리 함수 id_to_word :", id_to_word)
+
+# 전처리 함수는 common/util.py 파일에도 저장되어 있음
